@@ -8,3 +8,4 @@ Description: Tools to deploy stats models with minimum coding.
 License: MIT
 Encoding: UTF-8
 LazyData: true
+Suggests: ggplot2,scatterplot3d,rgl,

@@ -6,13 +6,11 @@ biv_graph<-function(data,engine='base'){
 
 biv_scatter3d<-function(data,engine='scatterplot3d'){
   if(engine=='scatterplot3d'){
-    require(scatterplot3d)
-
     layout(matrix(1:2,1))
-    scatterplot3d(data[,1],data[,3],data[,2],
+    scatterplot3d :: scatterplot3d(data[,1],data[,3],data[,2],
                   xlab=colnames(data)[1],ylab=colnames(data)[2],
                   zlab = colnames(data)[2],highlight.3d = T)
-    scatterplot3d(data[,3],data[,1],data[,2],
+    scatterplot3d :: scatterplot3d(data[,3],data[,1],data[,2],
                   xlab=colnames(data)[3],ylab=colnames(data)[1],
                   zlab = colnames(data)[2],highlight.3d = T)
 
@@ -21,8 +19,7 @@ biv_scatter3d<-function(data,engine='scatterplot3d'){
                  ' with respect to ',colnames(data)[1],
                  ' and ',colnames(data)[3]))
   }else if(engine=='rgl'){
-    require(rgl)
-    plot3d(data[,1],data[,3],data[,2],
+    rgl :: plot3d(data[,1],data[,3],data[,2],
            xlab=colnames(data)[1],ylab=colnames(data)[2],
            zlab = colnames(data)[2])
   }#else if(engine=='gnuplot')

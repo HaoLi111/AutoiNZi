@@ -13,6 +13,6 @@ Temporary website:
 
 Tutorials:
 
-List of contributors:
+List of names of contributors:
 
 See also:

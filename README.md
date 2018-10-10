@@ -16,15 +16,21 @@ Tutorials:
 List of names of contributors:
 
 KevDoy <http://kevdoy.com/>  <https://github.com/KevDoy>(icon and logo designer)
+
 Hao Li <https://github.com/HaoLi111>(developer)
 
 See also:
 
 R-related programs for stats:
+
 R <https://www.r-project.org/>
+
 CRAN <https://cran.r-project.org/>
+
 iNZight (Auckland Uni) <https://www.stat.auckland.ac.nz/~wild/iNZight/>
+
 Rstudio <https://www.rstudio.com/>
 
 Target standards：
+
 NCEA Level 3 Stats standard <http://ncea.tki.org.nz/Resources-for-Internally-Assessed-Achievement-Standards/Mathematics-and-statistics/Level-3-Mathematics-and-statistics>

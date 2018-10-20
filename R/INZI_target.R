@@ -1,10 +1,11 @@
 #Auto data Tidying with Certain selected target
 
 #Time series quarterly data e.g. 2001Q4 11.5 ..
-INZI_getQTSstarting<-function(data){
-  return(c(as.numeric(substr(data[1,1],1,4)),as.numeric(substr(data[1,1],6,6))))
-}
+
 INZI_target_QTS<-function(data=mydata,target=NA,dfname='myqts',pos=.GlobalEnv,assign=F,report=T){
+  INZI_getQTSstarting<-function(data){
+    return(c(as.numeric(substr(data[1,1],1,4)),as.numeric(substr(data[1,1],6,6))))
+  }
   if(is.na(target)) target = 2#cleverer way of selecting target should be encouraged
   #prepare starting vector
   starting=c(as.numeric(substr(data[1,1],1,4)),as.numeric(substr(data[1,1],6,6)))#2012Q1 ->c(2012,1)
@@ -21,7 +22,7 @@ INZI_target_QTS<-function(data=mydata,target=NA,dfname='myqts',pos=.GlobalEnv,as
   }
 }#returning a time series obj
 
-INZI_target_BIV<-function(data=mydata,target=NA,dfname='mybiv',pos=.GlobalEnv,assign=F,completeonly=T,report=T){
+INZI_target<-function(data=mydata,target=NA,dfname='mybiv',pos=.GlobalEnv,assign=F,completeonly=T,report=T){
   if(is.na(target[1])){
     #select from correlation <further dev>
   }

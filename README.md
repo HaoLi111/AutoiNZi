@@ -4,6 +4,7 @@ How to install:
 Within R, use devtools:
 
 install.packages('devtools')
+
 devtools::install_github('HaoLi111/AutoiNZi')
 
 A number of other packages may also be required although same function in this package can still work with/without some packages. Your are also able to switch engines it depends on.
